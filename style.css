@@ -1,0 +1,66 @@
+.container {
+    width: 400px;
+    min-height: 500px;
+    border: 1px solid black;
+    float: left;
+    padding: 10px;
+    margin-right: 20px;
+    box-sizing: border-box;
+  }
+
+  .item {
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    padding: 5px;
+    margin-bottom: 5px;
+    cursor: grab;
+  }
+
+  .item.dragging {
+    opacity: 0.5;
+  }
+
+  .success {
+    background-color: lightgreen;
+  }
+
+  .success-message {
+    color: green;
+    margin-top: 10px;
+  }
+
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  #mydiv1 {
+    padding: 2px 0px;
+    background-image: url(https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=0.752xw:1.00xh;0.175xw,0&resize=1200:*);
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+  }
+
+  #mydiv2 {
+    padding: 2px 0px;
+    background-image: url(https://cdn.pixabay.com/photo/2014/11/30/14/11/cat-551554_1280.jpg);
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+  }
+
+  #mydiv3 {
+    padding: 2px 0px;
+    background-image: url(https://images.unsplash.com/flagged/photo-1566127992631-137a642a90f4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8M3x8fGVufDB8fHx8fA%3D%3D&w=1000&q=80);
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .container {
+      width:100%;
+    }
+}
